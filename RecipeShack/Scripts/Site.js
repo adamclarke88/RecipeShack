@@ -1,12 +1,19 @@
-﻿//$(".nav a").on("click", function () {
-//    $(".nav").find(".active").removeClass(".active");
-//    $(this).parent().addClass("active");
-//});
+﻿
 
-//$(document).on('click', '.nav li', function (e) {
-//    $(this).addClass('active').siblings().removeClass('.active');
-//});
-
-$(".nav li").click(function () {
+$(".nav li").on('click', function () {
     console.log("clicked on nav link");
 });
+
+$("#testButton").on('click', function () {
+    console.log("clicked on nav link");
+});
+
+// this styles the navbar links when the user is on the clicked page.  e.g. if on contact page, 'Contact' will be highlighted.
+function active_menu() {
+    var url = window.location.href;
+    $('.nav a').filter(function () {
+        return this.href == url;
+    }).addClass('navbar-link-style');
+}
+
+active_menu();  // calling the function above

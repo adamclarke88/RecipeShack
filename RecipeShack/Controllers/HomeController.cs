@@ -26,5 +26,12 @@ namespace RecipeShack.Controllers
 
             return View();
         }
+
+        public ActionResult Snippets()
+        {
+            ViewBag.Message = "Code snippets";
+
+            return View();
+        }
     }
 }

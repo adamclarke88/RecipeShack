@@ -30,7 +30,10 @@ textarea {
     margin-right: 0px;
 }
 
-/* changes nav links text colour on mouse hover */
-.nav > li > a:hover, {
-    background-color: #FCC;
+.navbar-link-style {
+    color: white !important;
 }
+
+
+
+
