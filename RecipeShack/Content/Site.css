@@ -34,6 +34,28 @@ textarea {
     color: white !important;
 }
 
+#searchButton {
+    background-color: #E9ECEF;
+}
+
+#searchButton:hover {
+    background-color: #C6C6C6 !important;
+    outline: none !important;
+}
+
+#searchButton:focus {
+    outline: none;
+}
+#testContainer {
+    padding-top: 100px;
+    background-color: gray;
+}
+
+#testCol {
+    background-color: crimson;
+}
+
+
 
 
 
